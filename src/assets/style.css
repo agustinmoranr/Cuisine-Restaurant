@@ -1,0 +1,112 @@
+:root {
+  --background-color: #ecf3fa;
+  --primary-color: #1b2845;
+  --secondary-color: #ff8717;
+  --light-secondary-color: #ffab5d;
+  --light-primary-color: #e6e6ea;
+  --small-breakpoint: 768px;
+  --mid-breakpoint: 980px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color);
+}
+
+
+html {
+  font-size: 6.25%
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16rem;
+}
+
+* a {
+  text-decoration: none;
+}
+
+/* Landing */
+
+.landing-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: 100vh;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  position: fixed;
+}
+
+.header label {
+  display: inline-block;
+  padding: 5px;
+  background-color: var(--light-primary-color);
+}
+.header label:hover {
+  cursor: pointer;
+  background: rgb(0,0,0, 0.2)
+}
+
+.header label span {
+  font-size: 30px;
+}
+
+#btn-menu {
+  display: none;
+}
+
+.header-nav-menu {
+  width: 100%;
+  max-width: 640px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 50%;
+  gap: 5px;
+  padding: 10px;
+  margin-left: -70%;
+  transition: all 0.5s;
+}
+
+#btn-menu:checked ~ .header-nav-menu {
+  margin: 0;
+}
+
+.header-nav-menu > span {
+  border-bottom: 1px solid var(--light-primary-color);
+}
+
+.header-nav-menu > span:hover {
+  background: rgb(0,0,0, 0.2)
+}
+
+.header-nav-menu a {
+  display: block;
+}
+@media (min-width: 768px) {
+  .header label {
+    display: none;
+  }
+  
+  .header-nav-menu {
+    margin-left: 0;
+    width: 100%;
+    grid-template-columns: repeat(8, auto);
+    gap: 32px;
+    justify-content: end;
+    align-items: center;
+    justify-items: center;
+    right: 0;
+    margin-right: 10%;
+  }
+}
+
+@media (min-width: 980px) {
+
+}
