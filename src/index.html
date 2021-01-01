@@ -22,7 +22,7 @@
       <nav class="header-nav-menu">
         <span><a href="#home">Home</a></span>
         <span><a href="#about-us">About Us</a></span>
-        <span><a href="">Menu</a></span>
+        <span><a href="#menu">Menu</a></span>
         <span><a href="">Order Now</a></span>
         <span><a href="">Blog</a></span>
         <span><a href="">Location</a></span>
@@ -56,37 +56,393 @@
       <form class="search-form" action="">
         <label for="search-input">
           <input type="text" id="search-input" placeholder="Search here" required>
-          <button type="submit">Location</button>
+          <button class="button-basis" type="submit">Location</button>
         </label>
       </form>
 
-      <picture class="back-img">
-        <img src="./assets/img/strawberry.jpg" alt="">
+      <picture class="home-img-ctr img-basis">
+        <source media="(min-width:980px)" srcset="./assets/img/home-img-big.jpg">
+        <img class="back-img" src="./assets/img/home-img.jpg" alt="">
       </picture>
     </section>
-
 
     <section id="about-us" class="about-us">
-      <picture class="back-img">
-        <img src="./assets/img/strawberry.jpg" alt="">
+      <picture class="about-mb-img-ctr img-basis">
+        <img class="back-img" src="./assets/img/cup.jpg" alt="">
+      </picture>
+      <picture class="about-left-img-ctr img-basis">
+        <img class="back-img" src="./assets/img/about-img.jpg" alt="">
       </picture>
 
-      <article>
-        <h4></h4>
-        <h1></h1>
-        <p></p>
-
-        <a href="#menu">
-          <span>Discover Menu</span>
-          <span class="material-icons"></span>
-        </a>
+      <article class="about-us--content">
+        <h4>About us</h4>
+        <h1>Discover Our <br> Restaurant Story</h1>
+        <p>
+          Cuisine is a team work of Cuisine Restaurant Cafe, we aim at promoting
+          the foodstuff industry through the branches, we establish and through
+          the new dishes. And integrate between different cultures. Nullam quis
+          ante. Etiam sit amet orci eget eros faucibus tin cidunt. Duis leo. Sed 
+          fringilla mauris sit amet nign. Donec sodales sagitis magna. Aenean commodo
+          ligula. Sed fringilla mauris sit amet nibh. Donec Sodales sagittis magna.
+          Aenean commodo ligula.
+          <br> <br>
+          Nullam quis ante. Etiam sit amet orci eget eros faucibus tindidunt. Duis leo.
+          Sed fringilla mauris sit amet nigh. Donec sodales sagittis magna. Aenean
+          commodo ligula.
+        </p>
+        <div>
+          <a class="rdt-menu-btn" href="#menu">
+            <span>Discover Menu</span>
+            <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
       </article>
 
-      <picture class="back-img">
-        <img src="./assets/img/strawberry.jpg" alt="">
+      <picture class="about-right-img-ctr img-basis">
+        <img class="back-img" src="./assets/img/about-2.jpg" alt="">
       </picture>
     </section>
-    <section id="menu" class="menu"></section>
+
+    <section id="menu" class="menu">
+      <p class="menu-description">Order Online Now</p>
+      <h1 class="menu-title">Our Speciality Cusine</h1>
+
+      <!--select slider section start -->
+      <nav class="slider-nav">
+        <input type="radio" name="silder-sec-nav" id="breakfast-btn" class="slider-btn" checked>
+        <label for="breakfast-btn">Breakfast</label>
+
+        <input type="radio" name="silder-sec-nav" id="lunch-btn" class="slider-btn">
+        <label for="lunch-btn">Lunch</label>
+
+        <input type="radio" name="silder-sec-nav" id="dinner-btn" class="slider-btn">
+        <label for="dinner-btn">Dinner</label>
+
+        <input type="radio" name="silder-sec-nav" id="dessert-btn" class="slider-btn">
+        <label for="dessert-btn">Dessert</label>
+
+        <input type="radio" name="silder-sec-nav" id="shake-btn" class="slider-btn">
+        <label for="shake-btn">Shake</label>
+      </nav>
+      <!--select slider section end -->
+
+      <!--slider start-->
+      <section class="slider">
+        
+        <!-- manual-nav start-->
+        <div class="manual-ctrls">
+          <input type="radio" name="slide-nav" id="slide-1-btn" class="slide-btn" checked>
+          <label class="manual-btn" for="slide-1-btn"></label>
+          
+          <input type="radio" name="slide-nav" id="slide-2-btn" class="slide-btn">
+          <label class="manual-btn" for="slide-2-btn"></label>
+          
+          <input type="radio" name="slide-nav" id="slide-3-btn" class="slide-btn">
+          <label class="manual-btn" for="slide-3-btn"></label>
+        </div>
+        <!-- manual-nav end-->
+
+        <!--slides start-->
+        <div class="slides-ctner">
+          <article class="slide first">
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+          </article>
+          <article class="slide">
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$179</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Contadina</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+          </article>
+        </div>
+        <!--slides end-->
+        
+      </section>
+      <!--slider end-->
+    </section>
+
     <section class="order-now"></section>
     <section class="blog"></section>
     <footer class="footer"></footer>
