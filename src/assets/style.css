@@ -97,7 +97,7 @@ body {
   display: grid;
   grid-template-rows: 8vh 40vh 8vh 10vh 34vh;
   justify-items: center;
-  background: linear-gradient(to right, var(--background-color),#f7f9fa );
+  background: linear-gradient(to left,#f2f6f7, var(--background-color) );
 }
 
 .social-stats {
@@ -300,6 +300,7 @@ body {
   justify-items: center;
   align-items: center;
   padding: 20px 0;
+  background-color: #f2f6f7;
 }
 
 .menu input {
@@ -436,26 +437,29 @@ body {
   opacity: 0.5;
 }
 
-/* manual ctrols start */
-#slide-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-1-btn"]  {
+/* ----manual ctrols start ----*/
+/* ----breakfast start----- */
+#slide-br-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-br-1-btn"]  {
   background: var(--secondary-color);
   opacity: 1;
   width: 20px;
   height: 20px;
 }
-#slide-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-2-btn"]  {
+#slide-br-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-br-2-btn"]  {
   background: var(--secondary-color);
   opacity: 1;
   width: 20px;
   height: 20px;
 }
-#slide-3-btn:checked ~ .manual-ctrls .manual-btn[for="slide-3-btn"]  {
+#slide-br-3-btn:checked ~ .manual-ctrls .manual-btn[for="slide-br-3-btn"]  {
   background: var(--secondary-color);
   opacity: 1;
   width: 20px;
   height: 20px;
 }
+/* ----breakfast end----- */
 
+/* ----lunch start----- */
 #slide-lh-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-lh-1-btn"]  {
   background: var(--secondary-color);
   opacity: 1;
@@ -474,26 +478,79 @@ body {
   width: 20px;
   height: 20px;
 }
+/* ----lunch end----- */
+
+/* ----dinner start----- */
+#slide-dn-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-dn-1-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+#slide-dn-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-dn-2-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+#slide-dn-3-btn:checked ~ .manual-ctrls .manual-btn[for="slide-dn-3-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+/* ----dinner end----- */
+
+/* ----dessert start----- */
+#slide-drt-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-drt-1-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+#slide-drt-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-drt-2-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+
+/* ----shakes start----- */
+#slide-sk-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-sk-1-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+#slide-sk-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-sk-2-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+/* ----shakes end----- */
 /* manual ctrols end */
 
 /* render slide start */
-#slide-1-btn:checked ~ .first{
+/* ----breakfast slides start----- */
+#slide-br-1-btn:checked ~ .first{
   display: grid;
   visibility: visible;
   animation: fade 1.5s;
 }
-#slide-2-btn:checked ~ .second{
+#slide-br-2-btn:checked ~ .second{
   display: grid;
   visibility: visible;
   animation: fade 1.5s;
+}
+#slide-br-3-btn:checked ~ .third{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+}
+/* ----breakfast slides end----- */
 
-}
-#slide-3-btn:checked ~ .third{
-  display: grid;
-  visibility: visible;
-  animation: fade 1.5s;
-}
-
+/* ----lunch slides start----- */
 #slide-lh-1-btn:checked ~ .first{
   display: grid;
   visibility: visible;
@@ -510,6 +567,52 @@ body {
   visibility: visible;
   animation: fade 1.5s;
 }
+/* ----lunch slides start----- */
+
+/* ----dinner slides start----- */
+#slide-dn-1-btn:checked ~ .first{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+}
+#slide-dn-2-btn:checked ~ .second{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+
+}
+#slide-dn-3-btn:checked ~ .third{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+}
+/* ----dinner slides start----- */
+
+/* ----dessert slides start----- */
+#slide-drt-1-btn:checked ~ .first{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+}
+#slide-drt-2-btn:checked ~ .second{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+}
+/* ----dessert slides start----- */
+
+/* ----shakes slides start----- */
+#slide-sk-1-btn:checked ~ .first{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+}
+#slide-sk-2-btn:checked ~ .second{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+}
+/* ----shakes slides start----- */
 /* render slide end */
 
 
@@ -548,14 +651,16 @@ body {
 #lunch-btn:checked ~ .lunch {
   display: grid;
 }
+#dinner-btn:checked ~ .dinner {
+  display: grid;
+}
+#dessert-btn:checked ~ .dessert {
+  display: grid;
+}
+#shake-btn:checked ~ .shakes {
+  display: grid;
+}
 /* ----render slider end----- */
-/* #breakfast-btn:checked ~ .breakfast #slide-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-1-btn"]  {
-  background: var(--secondary-color);
-  opacity: 1;
-  width: 20px;
-  height: 20px;
-} */
-
 
 
 @keyframes fade {
@@ -701,17 +806,8 @@ body {
   .slider-nav label {
     font-size: 20rem;
   }
-  
-  /* .manual-ctrls {
-    grid-row: 2 / span 1;
-  }
-
-  .slides-ctner {
-    grid-row: 1 / span 1;
-  } */
 
   .slide {
-    /* max-width: 1360px; */
     padding: 0 10%;
   }
 
