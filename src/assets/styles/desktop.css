@@ -1,0 +1,55 @@
+.search-view {
+  justify-items: start;
+  grid-template-columns: 50% 1fr;
+  padding-left: 100px;
+}
+
+.search-form {
+  max-width: none;
+}
+
+.search-view--title {
+  align-self: end;
+  font-size: 84rem;
+  line-height: 84px;
+}
+
+.social-stats {
+  gap: 60px;
+}
+
+.about-us {
+  grid-template-columns: 2fr 50% 1fr;
+}
+
+.about-us--content div {
+  padding-left: 10px;
+}
+
+.about-left-img-ctr {
+  grid-column: 1 / span 1;
+}
+.about-right-img-ctr {
+  display: block;
+}
+.about-us--content {
+  grid-column: 2 / span 1;
+  justify-items: start;
+}
+.about-us--content h1 {
+  font-size: 64rem;
+}
+.about-us--content h4 {
+  font-size: 20rem;
+}
+.about-us--content p {
+  font-size: 18rem;
+}
+
+.slider-nav label {
+  font-size: 20rem;
+}
+
+.slide {
+  padding: 0 10%;
+}

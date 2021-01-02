@@ -30,7 +30,6 @@ body {
 }
 
 /* Landing */
-
 .landing-container {
   display: grid;
   grid-template-columns: 100%;
@@ -38,7 +37,6 @@ body {
 }
 
 /* Header */
-
 .header {
   width: 100%;
   position: fixed;
@@ -663,6 +661,7 @@ body {
 /* ----render slider end----- */
 
 
+/* Key frames */
 @keyframes fade {
   0% {
       opacity: 0.6;
@@ -671,144 +670,4 @@ body {
   100% {
       opacity: 1;
   }
-}
-
-/* -----media queries----- */
-
-@media (min-width: 680px) {
-  .header label {
-    display: none;
-  }
-  
-  .header-nav-menu {
-    margin-left: 0;
-    width: 100%;
-    grid-template-columns: repeat(8, auto);
-    gap: 32px;
-    justify-content: end;
-    align-items: center;
-    justify-items: center;
-    background-color: transparent;
-  }
-
-  .search-view {
-    grid-template-rows: 8vh 10vh 46vh 10vh 10vh 16vh;
-    grid-template-columns: 60% 1fr
-  }
-
-  .social-stats {
-    grid-row: 5 / span 1;
-    grid-column: 1 / span 1;
-  }
-
-  .search-view--title {
-    grid-column: 1/span 1;
-    grid-row: 2 /span 2;
-    font-size: 60rem;
-  }
-
-  .search-form {
-    grid-row: 4 / span 1;
-    grid-column: 1 / span 1;
-  }
-
-  .home-img-ctr {
-    grid-row: 1 / -1;
-    grid-column: 2 / span 1;
-  }
-
-  .search-form {
-    height: 65%;
-  }
-
-  .search-form label {
-    height: 100%;
-  }
-
-  .about-us {
-    display: grid;
-    grid-template-columns: 50% 1fr;
-  }
-
-  .about-mb-img-ctr {
-    display: none;
-  }
-
-  .about-left-img-ctr {
-    display: block;
-  }
-  .menu-description {
-  font-size: 20rem;
-
-  }
-  .menu-title {
-    font-size: 64rem;
-  }
-
-  .slider-nav {
-    grid-template-columns: repeat(5, 1fr); 
-    gap: 15px;
-  }
-  .slide {
-    gap: 20px;
-  }
-}
-
-@media (min-width: 980px) {
-  .search-view {
-    justify-items: start;
-    grid-template-columns: 50% 1fr;
-    padding-left: 100px;
-  }
-
-  .search-form {
-    max-width: none;
-  }
-
-  .search-view--title {
-    align-self: end;
-    font-size: 84rem;
-    line-height: 84px;
-  }
-
-  .social-stats {
-    gap: 60px;
-  }
-
-  .about-us {
-    grid-template-columns: 2fr 50% 1fr;
-  }
-  
-  .about-us--content div {
-    padding-left: 10px;
-  }
-
-  .about-left-img-ctr {
-    grid-column: 1 / span 1;
-  }
-  .about-right-img-ctr {
-    display: block;
-  }
-  .about-us--content {
-    grid-column: 2 / span 1;
-    justify-items: start;
-  }
-  .about-us--content h1 {
-    font-size: 64rem;
-  }
-  .about-us--content h4 {
-    font-size: 20rem;
-  }
-  .about-us--content p {
-    font-size: 18rem;
-  }
-
-  .slider-nav label {
-    font-size: 20rem;
-  }
-
-  .slide {
-    padding: 0 10%;
-  }
-
 }
