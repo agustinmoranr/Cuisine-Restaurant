@@ -343,16 +343,6 @@ body {
   justify-items: center;
 }
 
-/* .slides-ctner {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: max-content;
-  justify-items: center;
-  grid-row: 2 / span 1;
-  grid-column: 1 / span 1;
-} */
-
 .slide {
   display: none;
   width: 100%;
@@ -466,19 +456,19 @@ body {
   height: 20px;
 }
 
-#slide-l-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-l-1-btn"]  {
+#slide-lh-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-lh-1-btn"]  {
   background: var(--secondary-color);
   opacity: 1;
   width: 20px;
   height: 20px;
 }
-#slide-l-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-l-2-btn"]  {
+#slide-lh-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-lh-2-btn"]  {
   background: var(--secondary-color);
   opacity: 1;
   width: 20px;
   height: 20px;
 }
-#slide-l-3-btn:checked ~ .manual-ctrls .manual-btn[for="slide-l-3-btn"]  {
+#slide-lh-3-btn:checked ~ .manual-ctrls .manual-btn[for="slide-lh-3-btn"]  {
   background: var(--secondary-color);
   opacity: 1;
   width: 20px;
@@ -504,18 +494,18 @@ body {
   animation: fade 1.5s;
 }
 
-#slide-l-1-btn:checked ~ .first{
+#slide-lh-1-btn:checked ~ .first{
   display: grid;
   visibility: visible;
   animation: fade 1.5s;
 }
-#slide-l-2-btn:checked ~ .second{
+#slide-lh-2-btn:checked ~ .second{
   display: grid;
   visibility: visible;
   animation: fade 1.5s;
 
 }
-#slide-l-3-btn:checked ~ .third{
+#slide-lh-3-btn:checked ~ .third{
   display: grid;
   visibility: visible;
   animation: fade 1.5s;
