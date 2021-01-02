@@ -2,7 +2,6 @@
   --background-color: #ecf3fa;
   --primary-color: #0d0d25;
   --secondary-color: #ff8800;
-  /* --mid-secondary-color: #ff912a; */
   --light-secondary-color: #ffaa4d;
   --light-primary-color: #b1b1b1;
   --small-breakpoint: 768px;
@@ -300,43 +299,31 @@ body {
                       1fr;
   justify-items: center;
   align-items: center;
-  /* border: 1px solid red; */
   padding: 20px 0;
 }
 
 .menu input {
   display: none;
-  /* border: 1px solid red; */
-
 }
 
 .menu-description {
   font-weight: 500;
-  /* font-size: 20rem; */
   font-size: 16rem;
   color: var(--secondary-color);
-  /* border: 1px solid red; */
 }
 
 .menu-title {
-  /* font-size: 64rem; */
   font-size: 46rem;
   text-align: center;
   font-family: 'Old Standard TT', serif;
-  /* border: 1px solid red; */
-
 }
 
 .slider-nav {
   display: grid;
-  /* grid-template-columns: repeat(5, 1fr); */
-  /* gap: 15px; */
-  /* gap: 10px; */
 }
 
 .slider-nav label {
   padding: 10px 25px;
-  /* border: 1px solid red; */
   text-align: center;
   cursor: pointer;
   font-size: 16rem;
@@ -345,49 +332,37 @@ body {
   border-bottom: 1px solid var(--light-primary-color);
 }
 
-.slider-btn:checked + label {
-  color: var(--secondary-color);
-  border-bottom: 1px solid var(--secondary-color);
-  transition: all 0.2s;
-}
-
 .slider {
-  display: grid;
+  display: none;
   width: 100%;
   grid-template-rows: max-content 1fr;
-  /* grid-template-columns: repeat(3, 1480px); */
   align-items: center;
   gap: 20px;
   margin: 20px 0;
   position: relative;
   justify-items: center;
-  /* border: 1px solid red; */
 }
 
-.slides-ctner {
+/* .slides-ctner {
   width: 100%;
   display: grid;
   grid-template-columns: 100%;
+  grid-template-rows: max-content;
   justify-items: center;
-  /* max-width: 1480px; */
-}
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+} */
 
 .slide {
+  display: none;
   width: 100%;
-  display: grid;
   grid-template-columns: repeat(auto-fill, minMax(100px, 320px));
   gap: 2px;
   justify-content: center;
+  visibility: hidden;
+  transition: opacity 600ms, visibility 600ms;
+  -webkit-transition: opacity 600ms, visibility 600ms;
 }
-
-/* .side {
-  margin-left: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-} */
 
 .slide-card {
   height: 340px;
@@ -397,7 +372,7 @@ body {
 }
 
 .slide-card:hover {
-  background:rgb(0,0,0, 1)
+  background:rgb(0,0,0, 1);
 }
 
 .card--img {
@@ -434,7 +409,6 @@ body {
 }
 .card-name {
   align-self: start;
-  /* font-weight: 500; */
 }
 
 .card--price {
@@ -452,9 +426,13 @@ body {
 .manual-ctrls {
   display: grid;
   grid-template-columns: auto;
+  grid-template-rows: 20px;
   grid-auto-flow: column;
   justify-items: center;
   justify-content:center;
+  align-items: center;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
   gap: 25px;
 }
 
@@ -468,14 +446,138 @@ body {
   opacity: 0.5;
 }
 
-.slide-btn:checked + label  {
+/* manual ctrols start */
+#slide-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-1-btn"]  {
   background: var(--secondary-color);
   opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+#slide-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-2-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+#slide-3-btn:checked ~ .manual-ctrls .manual-btn[for="slide-3-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
 }
 
-.slide-2-btn:checked article[class="side"]{
+#slide-l-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-l-1-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+#slide-l-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-l-2-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+#slide-l-3-btn:checked ~ .manual-ctrls .manual-btn[for="slide-l-3-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+/* manual ctrols end */
+
+/* render slide start */
+#slide-1-btn:checked ~ .first{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+}
+#slide-2-btn:checked ~ .second{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
 
 }
+#slide-3-btn:checked ~ .third{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+}
+
+#slide-l-1-btn:checked ~ .first{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+}
+#slide-l-2-btn:checked ~ .second{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+
+}
+#slide-l-3-btn:checked ~ .third{
+  display: grid;
+  visibility: visible;
+  animation: fade 1.5s;
+}
+/* render slide end */
+
+
+/* -----slider nav ctrols start----- */
+#breakfast-btn:checked ~ .slider-nav label[for="breakfast-btn"] {
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  transition: all 0.2s;
+}
+#lunch-btn:checked ~ .slider-nav label[for="lunch-btn"] {
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  transition: all 0.2s;
+}
+#dinner-btn:checked ~ .slider-nav label[for="dinner-btn"] {
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  transition: all 0.2s;
+}
+#dessert-btn:checked ~ .slider-nav label[for="dessert-btn"] {
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  transition: all 0.2s;
+}
+#shake-btn:checked ~ .slider-nav label[for="shake-btn"] {
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  transition: all 0.2s;
+}
+/* -----slider nav ctrols end----- */
+
+/* ----render slider start----- */
+#breakfast-btn:checked ~ .breakfast {
+  display: grid;
+}
+#lunch-btn:checked ~ .lunch {
+  display: grid;
+}
+/* ----render slider end----- */
+/* #breakfast-btn:checked ~ .breakfast #slide-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-1-btn"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+} */
+
+
+
+@keyframes fade {
+  0% {
+      opacity: 0.6;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
 /* -----media queries----- */
 
 @media (min-width: 680px) {
@@ -606,16 +708,21 @@ body {
     font-size: 18rem;
   }
 
-  .manual-ctrls {
-    grid-row: 2 / span 1;
-  }
-  
   .slider-nav label {
     font-size: 20rem;
   }
+  
+  /* .manual-ctrls {
+    grid-row: 2 / span 1;
+  }
+
+  .slides-ctner {
+    grid-row: 1 / span 1;
+  } */
 
   .slide {
-    max-width: 1360px;
+    /* max-width: 1360px; */
+    padding: 0 10%;
   }
 
 }

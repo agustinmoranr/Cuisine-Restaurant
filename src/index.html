@@ -61,17 +61,17 @@
       </form>
 
       <picture class="home-img-ctr img-basis">
-        <source media="(min-width:980px)" srcset="./assets/img/home-img-big.jpg">
-        <img class="back-img" src="./assets/img/home-img.jpg" alt="">
+        <source media="(min-width:980px)" srcset="./assets/img/home/home-img-big.jpg">
+        <img class="back-img" src="./assets/img/home/home-img.jpg" alt="">
       </picture>
     </section>
 
     <section id="about-us" class="about-us">
       <picture class="about-mb-img-ctr img-basis">
-        <img class="back-img" src="./assets/img/cup.jpg" alt="">
+        <img class="back-img" src="./assets/img/about/cup.jpg" alt="">
       </picture>
       <picture class="about-left-img-ctr img-basis">
-        <img class="back-img" src="./assets/img/about-img.jpg" alt="">
+        <img class="back-img" src="./assets/img/about/about-img.jpg" alt="">
       </picture>
 
       <article class="about-us--content">
@@ -99,59 +99,270 @@
       </article>
 
       <picture class="about-right-img-ctr img-basis">
-        <img class="back-img" src="./assets/img/about-2.jpg" alt="">
+        <img class="back-img" src="./assets/img/about/about-2.jpg" alt="">
       </picture>
     </section>
 
     <section id="menu" class="menu">
       <p class="menu-description">Order Online Now</p>
       <h1 class="menu-title">Our Speciality Cusine</h1>
-
+      <input type="radio" name="silder-sec-nav" id="breakfast-btn" checked>
+      <input type="radio" name="silder-sec-nav" id="lunch-btn">
+      <input type="radio" name="silder-sec-nav" id="dinner-btn">
+      <input type="radio" name="silder-sec-nav" id="dessert-btn">
+      <input type="radio" name="silder-sec-nav" id="shake-btn">
       <!--select slider section start -->
       <nav class="slider-nav">
-        <input type="radio" name="silder-sec-nav" id="breakfast-btn" class="slider-btn" checked>
         <label for="breakfast-btn">Breakfast</label>
-
-        <input type="radio" name="silder-sec-nav" id="lunch-btn" class="slider-btn">
         <label for="lunch-btn">Lunch</label>
-
-        <input type="radio" name="silder-sec-nav" id="dinner-btn" class="slider-btn">
         <label for="dinner-btn">Dinner</label>
-
-        <input type="radio" name="silder-sec-nav" id="dessert-btn" class="slider-btn">
         <label for="dessert-btn">Dessert</label>
-
-        <input type="radio" name="silder-sec-nav" id="shake-btn" class="slider-btn">
         <label for="shake-btn">Shake</label>
       </nav>
       <!--select slider section end -->
 
       <!--slider start-->
-      <section class="slider">
+      <section class="slider breakfast">
+        <input type="radio" name="slide-nav" id="slide-1-btn" checked>
+        <input type="radio" name="slide-nav" id="slide-2-btn">
+        <input type="radio" name="slide-nav" id="slide-3-btn">
         
         <!-- manual-nav start-->
         <div class="manual-ctrls">
-          <input type="radio" name="slide-nav" id="slide-1-btn" class="slide-btn" checked>
           <label class="manual-btn" for="slide-1-btn"></label>
-          
-          <input type="radio" name="slide-nav" id="slide-2-btn" class="slide-btn">
           <label class="manual-btn" for="slide-2-btn"></label>
-          
-          <input type="radio" name="slide-nav" id="slide-3-btn" class="slide-btn">
           <label class="manual-btn" for="slide-3-btn"></label>
         </div>
         <!-- manual-nav end-->
 
         <!--slides start-->
-        <div class="slides-ctner">
+        <!-- <div class="slides-ctner"> -->
           <article class="slide first">
             <div class="slide-card" href="#">
               <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
+                <img class="back-img" src="./assets/img/menu/breakfast/hcakes.jpg" alt="Imagen de un platillo de comida">
               </picture>
   
               <span class="card-overlay">
-                <p class="card--price">$179</p>
+                <p class="card--price">$49</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Hot Cakes</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/hcakes.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$49</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Hot Cakes</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/hcakes.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$49</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Hot Cakes</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/hcakes.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$49</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Hot Cakes</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/berry-cereal.webp" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$69</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Cereal Berry</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/berry-cereal.webp" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$69</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Cereal Berry</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/berry-cereal.webp" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$69</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Cereal Berry</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/berry-cereal.webp" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$69</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Cereal Berry</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+          </article>
+          <article class="slide second">
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/eggs.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$79</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Eggs</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/eggs.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$79</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Eggs</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/eggs.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$79</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Eggs</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/eggs.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$79</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Eggs</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/salad.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$99</p>
                 <p class="card--rate">
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
@@ -165,11 +376,11 @@
             </div>
             <div class="slide-card" href="#">
               <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
+                <img class="back-img" src="./assets/img/menu/breakfast/salad.jpg" alt="Imagen de un platillo de comida">
               </picture>
   
               <span class="card-overlay">
-                <p class="card--price">$179</p>
+                <p class="card--price">$99</p>
                 <p class="card--rate">
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
@@ -183,11 +394,11 @@
             </div>
             <div class="slide-card" href="#">
               <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
+                <img class="back-img" src="./assets/img/menu/breakfast/salad.jpg" alt="Imagen de un platillo de comida">
               </picture>
   
               <span class="card-overlay">
-                <p class="card--price">$179</p>
+                <p class="card--price">$99</p>
                 <p class="card--rate">
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
@@ -201,83 +412,11 @@
             </div>
             <div class="slide-card" href="#">
               <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
+                <img class="back-img" src="./assets/img/menu/breakfast/salad.jpg" alt="Imagen de un platillo de comida">
               </picture>
   
               <span class="card-overlay">
-                <p class="card--price">$179</p>
-                <p class="card--rate">
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                </p>
-                <p class="card-name">Contadina</p>
-                <button class="card-buy-btn button-basis">Order Now</button>
-              </span>
-            </div>
-            <div class="slide-card" href="#">
-              <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
-              </picture>
-  
-              <span class="card-overlay">
-                <p class="card--price">$179</p>
-                <p class="card--rate">
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                </p>
-                <p class="card-name">Contadina</p>
-                <button class="card-buy-btn button-basis">Order Now</button>
-              </span>
-            </div>
-            <div class="slide-card" href="#">
-              <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
-              </picture>
-  
-              <span class="card-overlay">
-                <p class="card--price">$179</p>
-                <p class="card--rate">
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                </p>
-                <p class="card-name">Contadina</p>
-                <button class="card-buy-btn button-basis">Order Now</button>
-              </span>
-            </div>
-            <div class="slide-card" href="#">
-              <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
-              </picture>
-  
-              <span class="card-overlay">
-                <p class="card--price">$179</p>
-                <p class="card--rate">
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                  <span class="material-icons">star_rate</span>
-                </p>
-                <p class="card-name">Contadina</p>
-                <button class="card-buy-btn button-basis">Order Now</button>
-              </span>
-            </div>
-            <div class="slide-card" href="#">
-              <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/home-img.jpg" alt="Imagen de un platillo de comida">
-              </picture>
-  
-              <span class="card-overlay">
-                <p class="card--price">$179</p>
+                <p class="card--price">$99</p>
                 <p class="card--rate">
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
@@ -290,14 +429,398 @@
               </span>
             </div>
           </article>
-          <article class="slide">
+          <article class="slide third">
             <div class="slide-card" href="#">
               <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+                <img class="back-img" src="./assets/img/menu/breakfast/coditos.jpg" alt="Imagen de un platillo de comida">
               </picture>
   
               <span class="card-overlay">
-                <p class="card--price">$179</p>
+                <p class="card--price">$89</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Coditos</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/coditos.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$89</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Coditos</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/coditos.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$89</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Coditos</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/coditos.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$89</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Coditos</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/spaguetti.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$99</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Spaguetti</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/spaguetti.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$99</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Spaguetti</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/spaguetti.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$99</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Spaguetti</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/spaguetti.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$99</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Spaguetti</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+          </article>
+        <!-- </div> -->
+        <!--slides end-->
+        
+      </section>
+      <section class="slider lunch">
+        
+        <input type="radio" name="slide-nav" id="slide-l-1-btn" checked>
+        <input type="radio" name="slide-nav" id="slide-l-2-btn">
+        <input type="radio" name="slide-nav" id="slide-l-3-btn">
+
+        <!-- manual-nav start-->
+        <div class="manual-ctrls">
+          <label class="manual-btn" for="slide-l-1-btn"></label>
+          <label class="manual-btn" for="slide-l-2-btn"></label>
+          <label class="manual-btn" for="slide-l-3-btn"></label>
+        </div>
+        <!-- manual-nav end-->
+
+        <!--slides start-->
+        <!-- <div class="slides-ctner"> -->
+          <article class="slide first">
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/hcakes.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$49</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Hot Cakes</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/hcakes.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$49</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Hot Cakes</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/hcakes.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$49</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Hot Cakes</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/hcakes.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$49</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Hot Cakes</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/berry-cereal.webp" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$69</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Cereal Berry</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/berry-cereal.webp" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$69</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Cereal Berry</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/berry-cereal.webp" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$69</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Cereal Berry</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/berry-cereal.webp" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$69</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Cereal Berry</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+          </article>
+          <article class="slide second">
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/eggs.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$79</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Eggs</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/eggs.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$79</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Eggs</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/eggs.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$79</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Eggs</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/eggs.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$79</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Eggs</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/salad.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$99</p>
                 <p class="card--rate">
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
@@ -311,11 +834,11 @@
             </div>
             <div class="slide-card" href="#">
               <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+                <img class="back-img" src="./assets/img/menu/breakfast/salad.jpg" alt="Imagen de un platillo de comida">
               </picture>
   
               <span class="card-overlay">
-                <p class="card--price">$179</p>
+                <p class="card--price">$99</p>
                 <p class="card--rate">
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
@@ -329,11 +852,11 @@
             </div>
             <div class="slide-card" href="#">
               <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+                <img class="back-img" src="./assets/img/menu/breakfast/salad.jpg" alt="Imagen de un platillo de comida">
               </picture>
   
               <span class="card-overlay">
-                <p class="card--price">$179</p>
+                <p class="card--price">$99</p>
                 <p class="card--rate">
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
@@ -347,11 +870,11 @@
             </div>
             <div class="slide-card" href="#">
               <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+                <img class="back-img" src="./assets/img/menu/breakfast/salad.jpg" alt="Imagen de un platillo de comida">
               </picture>
   
               <span class="card-overlay">
-                <p class="card--price">$179</p>
+                <p class="card--price">$99</p>
                 <p class="card--rate">
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
@@ -363,13 +886,15 @@
                 <button class="card-buy-btn button-basis">Order Now</button>
               </span>
             </div>
+          </article>
+          <article class="slide third">
             <div class="slide-card" href="#">
               <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+                <img class="back-img" src="./assets/img/menu/breakfast/coditos.jpg" alt="Imagen de un platillo de comida">
               </picture>
   
               <span class="card-overlay">
-                <p class="card--price">$179</p>
+                <p class="card--price">$89</p>
                 <p class="card--rate">
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
@@ -377,17 +902,17 @@
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
                 </p>
-                <p class="card-name">Contadina</p>
+                <p class="card-name">Coditos</p>
                 <button class="card-buy-btn button-basis">Order Now</button>
               </span>
             </div>
             <div class="slide-card" href="#">
               <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+                <img class="back-img" src="./assets/img/menu/breakfast/coditos.jpg" alt="Imagen de un platillo de comida">
               </picture>
   
               <span class="card-overlay">
-                <p class="card--price">$179</p>
+                <p class="card--price">$89</p>
                 <p class="card--rate">
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
@@ -395,17 +920,17 @@
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
                 </p>
-                <p class="card-name">Contadina</p>
+                <p class="card-name">Coditos</p>
                 <button class="card-buy-btn button-basis">Order Now</button>
               </span>
             </div>
             <div class="slide-card" href="#">
               <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+                <img class="back-img" src="./assets/img/menu/breakfast/coditos.jpg" alt="Imagen de un platillo de comida">
               </picture>
   
               <span class="card-overlay">
-                <p class="card--price">$179</p>
+                <p class="card--price">$89</p>
                 <p class="card--rate">
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
@@ -413,17 +938,17 @@
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
                 </p>
-                <p class="card-name">Contadina</p>
+                <p class="card-name">Coditos</p>
                 <button class="card-buy-btn button-basis">Order Now</button>
               </span>
             </div>
             <div class="slide-card" href="#">
               <picture class="card--img img-basis">
-                <img class="back-img" src="./assets/img/flowers.jpg" alt="Imagen de un platillo de comida">
+                <img class="back-img" src="./assets/img/menu/breakfast/coditos.jpg" alt="Imagen de un platillo de comida">
               </picture>
   
               <span class="card-overlay">
-                <p class="card--price">$179</p>
+                <p class="card--price">$89</p>
                 <p class="card--rate">
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
@@ -431,7 +956,79 @@
                   <span class="material-icons">star_rate</span>
                   <span class="material-icons">star_rate</span>
                 </p>
-                <p class="card-name">Contadina</p>
+                <p class="card-name">Coditos</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/spaguetti.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$99</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Spaguetti</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/spaguetti.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$99</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Spaguetti</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/spaguetti.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$99</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Spaguetti</p>
+                <button class="card-buy-btn button-basis">Order Now</button>
+              </span>
+            </div>
+            <div class="slide-card" href="#">
+              <picture class="card--img img-basis">
+                <img class="back-img" src="./assets/img/menu/breakfast/spaguetti.jpg" alt="Imagen de un platillo de comida">
+              </picture>
+  
+              <span class="card-overlay">
+                <p class="card--price">$99</p>
+                <p class="card--rate">
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                  <span class="material-icons">star_rate</span>
+                </p>
+                <p class="card-name">Spaguetti</p>
                 <button class="card-buy-btn button-basis">Order Now</button>
               </span>
             </div>
