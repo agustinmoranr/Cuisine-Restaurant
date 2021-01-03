@@ -55,8 +55,9 @@
 }
 
 /* order-now section start */
-.media {
+.ordnow-media {
   grid-column: 2 / span 1;
+  grid-row: 1 / -1;
 }
 
 #prev-btn {
@@ -73,5 +74,6 @@
 
 .ctrols {
   grid-column: 2 / span 1;
+  grid-row: 1 / -1;
 }
 /* order-now section end */

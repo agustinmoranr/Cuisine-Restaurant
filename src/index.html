@@ -2139,23 +2139,23 @@
         </div>
       </article>
       <section class="slider-video">
-        <video class="media" controls preload="auto" muted>
-          <source src="./assets/videos/shakes.mp4" alt="video de muestra de la cocina de un restaurante">
+        <video class="ordnow-media" preload="auto" muted>
+          <source class="ordnow-media-source" src="./assets/videos/shakes.mp4" alt="video de muestra de la cocina de un restaurante">
         </video>
         
         <!-- slider btns start -->
-        <button class="media-btn" id="next-btn" type="button" onclick="">
+        <button class="media-btn" id="next-btn" type="button" onclick="nextSlide()" >
           <span class="material-icons">navigate_next</span>
         </button>
 
-        <button class="media-btn" id="prev-btn" type="button" onclick="">
+        <button class="media-btn" id="prev-btn" type="button" onclick="prevSlide()">
           <span class="material-icons">navigate_before</span>
         </button>
         <!-- slider btns end -->
 
         <!-- Player buttons start -->
         <div class="ctrols">
-          <button class="media-btn" type="button" onclick="">
+          <button class="media-btn" id="ordnow-media-play-btn" type="button" onclick="playMedia()">
             <span class="material-icons">play_arrow</span>
           </button>
         </div>
@@ -2166,4 +2166,5 @@
     <footer class="footer"></footer>
   </main>
 </body>
+  <script src="./js/index.js"></script>
 </html>
