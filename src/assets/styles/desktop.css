@@ -53,3 +53,25 @@
 .slide {
   padding: 0 10%;
 }
+
+/* order-now section start */
+.media {
+  grid-column: 2 / span 1;
+}
+
+#prev-btn {
+  grid-column: 1 / span 1;
+  grid-row: 6 / span 1;
+  margin: 0;
+}
+
+#next-btn {
+  grid-column: 3 / span 1;
+  grid-row: 6 / span 1;
+  margin: 0;
+}
+
+.ctrols {
+  grid-column: 2 / span 1;
+}
+/* order-now section end */

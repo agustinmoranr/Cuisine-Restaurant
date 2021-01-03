@@ -29,6 +29,10 @@ body {
   text-decoration: none;
 }
 
+h1 {
+  font-family: 'Old Standard TT', serif;
+}
+
 /* Landing */
 .landing-container {
   display: grid;
@@ -120,7 +124,6 @@ body {
 .search-view--title {
   align-self: center;
   font-size: 46rem;
-  font-family: 'Old Standard TT', serif;
   grid-row-start: 2;
 }
 
@@ -224,7 +227,6 @@ body {
   font-weight: 500;
 }
 .about-us--content h1 {
-  font-family: 'Old Standard TT', serif;
   font-size: 40rem;
 }
 
@@ -314,7 +316,6 @@ body {
 .menu-title {
   font-size: 46rem;
   text-align: center;
-  font-family: 'Old Standard TT', serif;
 }
 
 .slider-nav {
@@ -660,6 +661,167 @@ body {
 }
 /* ----render slider end----- */
 
+
+/* order-now section start */
+.order-now {
+  display: grid;
+  grid-template-rows: repeat(2, max-content);
+  grid-template-columns: 100%;
+  justify-content: center;
+  justify-items: center;
+  padding: 20px 0;
+  gap: 40px;
+}
+
+.order-now--info {
+  width: 100%;
+  display: grid;
+  text-align: center;
+  gap: 5px;
+}
+
+.section-tag , .icon, .info-contact-number {
+  color: var(--secondary-color);
+  font-size: 18rem;
+  font-weight: 500;
+}
+
+.info-title {
+  font-size: 64rem;
+}
+
+.info-contact > p {
+  margin-top: 5px;
+}
+
+.info-contact p:nth-child(2) {
+  font-size: 20rem;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 40rem;
+}
+
+.info-contact-number {
+  font-family: 'Old Standard TT', serif;
+  font-size: 28rem;
+  font-weight: bold;
+}
+
+
+.timetable {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* align-items: space-between; */
+  margin-top: 10px;
+}
+
+.hours {
+  font-family: 'Old Standard TT', serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16rem;
+}
+.days {
+  font-weight: 500;
+}
+/* slider video start */
+.slider-video {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: 15% 1fr 15%;
+  position: relative;
+  align-items: center;
+}
+
+.media {
+  grid-row: 2 / -1;
+  grid-column: 1 / -1;
+  max-height: 680px;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: top;
+  z-index: 2;
+  outline: none;
+}
+
+.ctrols {
+  display: flex;
+  grid-row: 2 / -1;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 2;
+  background: rgb(0,0,0, 0.9);
+}
+
+
+/* 
+Deberian debe de hacer display flex cuando sea clickeado
+no cuando este hover
+
+.slider-video:hover .ctrols {
+  visibility: visible;
+  animation: all 2s;
+  display: flex;
+} */
+
+
+/* .slider-ctrols {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+} */
+
+#prev-btn, #next-btn {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  justify-self: center;
+}
+
+#prev-btn {
+  margin-right: 90px;
+}
+
+#next-btn {
+  margin-left: 90px;
+}
+
+.media-btn {
+  height: 60px;
+  width: 60px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 0.8;
+}
+
+/* posiblemente esto también deba ocurrir onclick */
+.media-btn:hover {
+  /* background: rgb(0,0,0, 0.9); */
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  opacity: 1;
+}
+
+.media-btn .material-icons {
+  font-size: 24rem;
+  color: var(--secondary-color);
+}
+/* slider video end */
+/* order-now section end */
 
 /* Key frames */
 @keyframes fade {

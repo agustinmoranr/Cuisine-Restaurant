@@ -1,3 +1,4 @@
+/* header start */
 .header label {
   display: none;
 }
@@ -12,7 +13,9 @@
   justify-items: center;
   background-color: transparent;
 }
+/* header start */
 
+/* home start */
 .search-view {
   grid-template-rows: 8vh 10vh 46vh 10vh 10vh 16vh;
   grid-template-columns: 60% 1fr
@@ -38,7 +41,6 @@
   grid-row: 1 / -1;
   grid-column: 2 / span 1;
 }
-
 .search-form {
   height: 65%;
 }
@@ -46,7 +48,10 @@
 .search-form label {
   height: 100%;
 }
+/* home end */
 
+
+/* about us section start */
 .about-us {
   display: grid;
   grid-template-columns: 50% 1fr;
@@ -59,14 +64,15 @@
 .about-left-img-ctr {
   display: block;
 }
+/* about us section end */
+
+/* menu section start */
 .menu-description {
 font-size: 20rem;
-
 }
 .menu-title {
   font-size: 64rem;
 }
-
 .slider-nav {
   grid-template-columns: repeat(5, 1fr); 
   gap: 15px;
@@ -74,3 +80,27 @@ font-size: 20rem;
 .slide {
   gap: 20px;
 }
+/* about us section end */
+
+/* order now section start */
+.timetable span:nth-of-type(1) {
+  order: 1;
+}
+.timetable span:nth-of-type(3) {
+  order: 2;
+}
+.timetable span:nth-of-type(2) {
+  order: 3;
+}
+.timetable span:nth-of-type(4) {
+  order: 4;
+}
+
+.days {
+  font-weight: 600;
+  font-size: 20rem;
+}
+.hours {
+  font-size: 28rem;
+}
+/* order now section end */

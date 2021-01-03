@@ -25,7 +25,7 @@
         <span><a href="#home">Home</a></span>
         <span><a href="#about-us">About Us</a></span>
         <span><a href="#menu">Menu</a></span>
-        <span><a href="">Order Now</a></span>
+        <span><a href="#order-now">Order Now</a></span>
         <span><a href="">Blog</a></span>
         <span><a href="">Location</a></span>
         <span><a class="material-icons" href="">shopping_cart</a></span>
@@ -2122,7 +2122,46 @@
       <!--slider end-->
     </section>
 
-    <section class="order-now"></section>
+    <section id="order-now" class="order-now">
+      <article class="order-now--info">
+        <p class="section-tag">Book Table</p>
+        <h1 class="info-title">Opening Hours</h1>
+        <div class="info-contact">
+          <span class="material-icons icon">phone</span>
+          <p>Call Now</p>
+          <p class="info-contact-number">+52 55-23-74-09-93</p>
+        </div>
+        <div class="timetable">
+          <span class="days">Monday to Tuesday</span>
+          <span class="hours">09:00 am - 22:00 pm</span>
+          <span class="days">Friday to Sunday</span>
+          <span class="hours">11:00 am - 20:00 pm</span>
+        </div>
+      </article>
+      <section class="slider-video">
+        <video class="media" controls preload="auto" muted>
+          <source src="./assets/videos/shakes.mp4" alt="video de muestra de la cocina de un restaurante">
+        </video>
+        
+        <!-- slider btns start -->
+        <button class="media-btn" id="next-btn" type="button" onclick="">
+          <span class="material-icons">navigate_next</span>
+        </button>
+
+        <button class="media-btn" id="prev-btn" type="button" onclick="">
+          <span class="material-icons">navigate_before</span>
+        </button>
+        <!-- slider btns end -->
+
+        <!-- Player buttons start -->
+        <div class="ctrols">
+          <button class="media-btn" type="button" onclick="">
+            <span class="material-icons">play_arrow</span>
+          </button>
+        </div>
+        <!-- Player buttons end -->
+      </section>
+    </section>
     <section class="blog"></section>
     <footer class="footer"></footer>
   </main>
