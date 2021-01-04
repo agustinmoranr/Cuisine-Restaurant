@@ -2123,6 +2123,9 @@
     </section>
 
     <section id="order-now" class="order-now">
+      <picture class="ordnow-img-ctr img-basis">
+        <img class="back-img" src="./assets/img/order-now/ord-now-back.jpg" alt="imagen de fondo de una libreta y una pluma">
+      </picture>
       <article class="order-now--info">
         <p class="section-tag">Book Table</p>
         <h1 class="info-title">Opening Hours</h1>
@@ -2139,7 +2142,8 @@
         </div>
       </article>
       <section class="slider-video">
-        <video class="ordnow-media" preload="auto" muted>
+        <video controls class="ordnow-media" preload="auto" muted>
+          <p>Tu navegador no soporta HTML5 video. Aquí está el</p>
           <source class="ordnow-media-source" src="./assets/videos/shakes.mp4" alt="video de muestra de la cocina de un restaurante">
         </video>
         
@@ -2153,12 +2157,10 @@
         </button>
         <!-- slider btns end -->
 
+        <button class="media-btn" id="ordnow-media-play-btn" type="button" onclick="playMedia()">
+          <span class="material-icons">play_arrow</span>
+        </button>
         <!-- Player buttons start -->
-        <div class="ctrols">
-          <button class="media-btn" id="ordnow-media-play-btn" type="button" onclick="playMedia()">
-            <span class="material-icons">play_arrow</span>
-          </button>
-        </div>
         <!-- Player buttons end -->
       </section>
     </section>

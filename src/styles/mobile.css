@@ -669,8 +669,16 @@ h1 {
   grid-template-columns: 100%;
   justify-content: center;
   justify-items: center;
-  padding: 20px 0;
   gap: 40px;
+  position: relative;
+}
+
+.ordnow-img-ctr {
+  width: 100%;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  position: absolute;
+  opacity: 0.2;
 }
 
 .order-now--info {
@@ -678,6 +686,8 @@ h1 {
   display: grid;
   text-align: center;
   gap: 5px;
+  margin-top:100px;
+  z-index: 1;
 }
 
 .section-tag , .icon, .info-contact-number {
@@ -687,6 +697,7 @@ h1 {
 }
 
 .info-title {
+  color: var(--primary-color);
   font-size: 64rem;
 }
 
@@ -700,7 +711,12 @@ h1 {
 }
 
 .icon {
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--secondary-color);
   font-size: 40rem;
+  border-radius: 30px;
+  padding: 10px;
 }
 
 .info-contact-number {
@@ -714,7 +730,6 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  /* align-items: space-between; */
   margin-top: 10px;
 }
 
@@ -727,6 +742,7 @@ h1 {
 .days {
   font-weight: 500;
 }
+
 /* slider video start */
 .slider-video {
   width: 100%;
@@ -739,9 +755,8 @@ h1 {
 }
 
 .ordnow-media {
-  max-height: 720px;
+  height: 540px;
   width: 100%;
-  height: 100%;
   grid-row: 2 / -1;
   grid-column: 1 / -1;
   object-fit: cover;
@@ -749,31 +764,6 @@ h1 {
   z-index: 2;
   outline: none;
 }
-
-.ctrols {
-  display: flex;
-  grid-row: 2 / -1;
-  align-items: center;
-  justify-content: space-evenly;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: 2;
-  background: rgb(0,0,0, 0.9);
-}
-
-
-/* 
-Deberian debe de hacer display flex cuando sea clickeado
-no cuando este hover
-
-.slider-video:hover .ctrols {
-  visibility: visible;
-  animation: all 2s;
-  display: flex;
-} */
 
 #prev-btn, #next-btn {
   grid-column: 2 / span 1;
@@ -790,6 +780,24 @@ no cuando este hover
   margin-left: 90px;
 }
 
+#ordnow-media-play-btn {
+  grid-row: 4 / span 2;
+  grid-column: 2 / span 1;
+  z-index: 3;
+  justify-self: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background: rgb(0,0,0, 0.9);
+}
+
+#ordnow-media-play-btn:hover {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  transition: all 0.2s;
+}
+
 .media-btn {
   height: 60px;
   width: 60px;
@@ -798,16 +806,6 @@ no cuando este hover
   outline: none;
   cursor: pointer;
   background-color: transparent;
-  opacity: 0.8;
-}
-
-/* posiblemente esto también deba ocurrir onclick */
-.media-btn:hover {
-  /* background: rgb(0,0,0, 0.9); */
-  /* width: 70px;
-  height: 70px;
-  border-radius: 35px; */
-  opacity: 1;
 }
 
 .media-btn .material-icons {

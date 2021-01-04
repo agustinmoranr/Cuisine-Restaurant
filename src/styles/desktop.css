@@ -55,7 +55,42 @@
 }
 
 /* order-now section start */
+.order-now--info{
+  gap:15px;
+}
+
+.section-tag {
+  font-size: 22rem;
+}
+.info-title{
+  font-size: 96rem;
+}
+
+.icon {
+  height: 70px;
+  width: 70px;
+  font-size: 50rem;
+  border-radius: 35px;
+}
+
+.info-contact > p {
+  margin-top: 20px;
+}
+
+.info-contact-number{
+  /* font-weight: 900; */
+  font-size: 44rem;
+}
+
+.hours{
+font-size: 34rem;
+}
+
+.slider-video {
+  margin-bottom: 100px;
+}
 .ordnow-media {
+  height: 640px;
   grid-column: 2 / span 1;
   grid-row: 1 / -1;
 }
@@ -72,8 +107,12 @@
   margin: 0;
 }
 
-.ctrols {
+.order-now-media-ctrols {
   grid-column: 2 / span 1;
   grid-row: 1 / -1;
+}
+
+.media-btn .material-icons {
+  font-size: 40rem;
 }
 /* order-now section end */
