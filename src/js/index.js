@@ -1,3 +1,4 @@
+// order now section start
 const ORDER_NOW_VIDEOS = [
   'shakes.mp4',
   'salad.mp4', 
@@ -79,4 +80,27 @@ function setVideoSource(videoIndex) {
   
   ORD_NOW_MEDIA.load()
 }
+// order now section end
 
+
+// blog section start
+const REVIEWS = [
+  {
+    img: 'Ángel.jpg',
+    name: 'Ángel Vega',
+    rol: 'UX Designer'
+  },
+  {
+    img: 'Ricardo.jpg',
+    name: 'Ricardo Chávez',
+    rol: 'Art Director'
+  },
+  {
+    img: 'fulano.jpg',
+    name: 'Fulanito Pérez',
+    rol: 'Backend Developer'
+  },
+];
+
+
+// blog section end

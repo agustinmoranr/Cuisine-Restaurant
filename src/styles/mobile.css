@@ -815,6 +815,65 @@ h1 {
 /* slider video end */
 /* order-now section end */
 
+
+/* blog section start */
+.blog {
+  display: grid;
+  grid-template-columns: 15% minMax(min-content, 600px) 15%;
+  grid-template-rows: 50px max-content 50px ;
+  justify-content: center;
+}
+
+.blog .manual-ctrls {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.reviews-slider {
+  grid-column: 1 / -1;
+  grid-row: 2 / -2;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.reviewer-img-ctr {
+  height: 140px;
+  width: 140px;
+  justify-self: center;
+}
+.reviewer-img-ctr img {
+  border-radius: 70px;
+}
+
+.reviewer-name {
+  font-weight: 500;
+  font-size: 28rem;
+}
+.reviewer-profesion {
+  color: var(--light-primary-color);
+  font-weight: 500;
+}
+.star-valoration {
+  grid-row: auto;
+  grid-column: auto;
+  gap: 4px;
+}
+
+.star-valoration .material-icons {
+  color: #ffc107;
+}
+
+.review {
+  font-style: italic;
+  margin-top: 10px;
+  color: #585875;
+  font-size: 20rem;
+  line-height: 30px;
+}
+/* blog section start */
+
 /* Key frames */
 @keyframes fade {
   0% {

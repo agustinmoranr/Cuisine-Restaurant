@@ -104,3 +104,15 @@ font-size: 20rem;
   font-size: 28rem;
 }
 /* order now section end */
+
+/* blog section start */
+.review {
+  font-size: 24rem;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.reviewer-profesion {
+  font-size: 20rem;
+}
+/* blog section end */

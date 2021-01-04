@@ -116,3 +116,14 @@ font-size: 34rem;
   font-size: 40rem;
 }
 /* order-now section end */
+
+.review {
+  line-height: 50px;
+}
+.reviewer-name {
+  font-size: 32rem;
+}
+
+.star-valoration .material-icons {
+  font-size: 28rem;
+}
