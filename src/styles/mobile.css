@@ -872,6 +872,35 @@ h1 {
   font-size: 20rem;
   line-height: 30px;
 }
+
+.slider-selector {
+  display: none;
+}
+
+#slide-blog-0:checked ~ .reviews-slider .manual-ctrls .manual-btn[for="slide-blog-0"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+#slide-blog-1:checked ~ .reviews-slider .manual-ctrls .manual-btn[for="slide-blog-1"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+#slide-blog-2:checked ~ .reviews-slider .manual-ctrls .manual-btn[for="slide-blog-2"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+#slide-blog-3:checked ~ .reviews-slider .manual-ctrls .manual-btn[for="slide-blog-3"]  {
+  background: var(--secondary-color);
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
 /* blog section start */
 
 /* Key frames */
