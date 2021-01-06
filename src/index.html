@@ -20,16 +20,16 @@
   <main class="landing-container">
     <header class="header">
       <input type="checkbox" id="btn-menu">
-      <label for="btn-menu"><span class="material-icons">menu</span></label>
+      <label class="header-dropdown" for="btn-menu"><span class="material-icons">menu</span></label>
       <nav class="header-nav-menu">
         <span><a href="#home" title="Seccion Home">Home</a></span>
         <span><a href="#about-us" title="Seccion About-Us">About Us</a></span>
         <span><a href="#menu" title="Seccion del Menu">Menu</a></span>
         <span><a href="#order-now" title="Seccion Order-Now">Order Now</a></span>
         <span><a href="#blog" title="Seccion del Blog">Blog</a></span>
-        <span><a href="" title="Seccion de Location">Location</a></span>
+        <span><a href="#footer" title="Seccion de Location">Location</a></span>
         <span><a class="material-icons" href="" title="Carrito de compras">shopping_cart</a></span>
-        <span><a class="material-icons" href="" title="Buscar algo...">search</a></span>
+        <label class="material-icons" for="search-input" title="Busca algo...">search</label>
       </nav>
     </header>
     <section id="home" class="search-view">
@@ -2191,7 +2191,48 @@
       </article>
     </section>
 
-    <footer class="footer"></footer>
+    <footer id="footer" class="footer">
+      <section class="footer-content">
+        <div class="footer-intro">
+          <span class="footer-intro--logo">
+            <picture>
+              <img src="./assets/img/restaurant-logo.PNG" alt="page logo">
+            </picture>
+            <h1>Divi Cuisine</h1>
+            <p>Food & Beverage</p>
+          </span>
+          <p class="footer-intro-description">Just like a perfectly baked pastry, we created Cuisine with special love and it shows.</p>
+        </div>
+        <div class="footer-schedule">
+            <h1>Open Hours</h1>
+            <p>Mon-Tue: 9 AM - 10 PM</p>
+            <p>Fri-Sun: 11 AM - 8 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+        <div class="footer-contact-us">
+          <h1>Contact Us</h1>
+          <p>176 W street name, New York, NY 10014 </p>
+          <p>Email: <a href="#footer">info@yourwebsite.com</a></p>
+          <p>Telephone: <a href="#footer">+52 55-23-74-09-93</a></p>
+        </div>
+        <form class="footer-sub-newsletter">
+          <h1>Subscribe Newsletter</h1>
+          <label for="newsletter-inpt">
+            <input type="email" name="newsletter-inpt" id="newsletter-inpt" placeholder="Email Address" required autocomplete="email">
+            <button type="submit"><span class="material-icons">send</span></button>
+          </label>
+        </form>
+      </section>
+      <section class="footer-end">
+        <span>2020 Cuisine Restaurant | Design by Mythun Ray, Coded by Agustin Moran 🧡</span>
+        <nav class="footer-end_social-net manual-ctrls">
+          <a href="#footer" class="material-icons">facebook</a>
+          <a href="#footer" class="material-icons">whatshot</a>
+          <a href="#footer">in</a>
+          <a href="#footer" class="material-icons">camera_alt</a>
+        </nav>
+      </section>
+    </footer>
   </main>
 </body>
   <script src="./js/index.js"></script>

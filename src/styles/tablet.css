@@ -1,5 +1,5 @@
 /* header start */
-  .header label {
+  .header-dropdown {
     display: none;
   }
   .header-nav-menu {
@@ -113,3 +113,35 @@
     font-size: 20rem;
   }
 /* blog section end */
+
+
+
+
+/* footer section starts */
+  .footer {
+    text-align: start;
+  }
+  .footer-content > div, .footer-sub-newsletter {
+    padding-left: 10px;
+  }
+  .footer-intro--logo p, .footer-intro--logo picture {
+    margin-left: 40px;
+  }
+  .footer-sub-newsletter {
+    justify-items: start;
+  }
+
+  .footer-sub-newsletter label {
+    width: 100%;
+  }
+  .footer-end  {
+    width: 90%;
+    padding: 20px 0;
+    flex-direction: row;
+    grid-column: 2 / span 1;
+    align-self: center;
+  }
+  .footer-end_social-net {
+    margin-top: 0px;
+  }
+/* footer section end */

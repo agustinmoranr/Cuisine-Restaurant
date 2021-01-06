@@ -131,3 +131,20 @@
     font-size: 28rem;
   }
 /* blog section end */
+
+
+
+
+/* footer section start */
+  .footer-content {
+    grid-template-columns: repeat(4, minMax(200px, 320px));
+    justify-items: center;
+    grid-column: 2 / span 1;
+    padding: 60px 0;
+  }
+
+  .footer-intro {
+    position: relative;
+    bottom: 55px;
+  }
+/* footer section end */
