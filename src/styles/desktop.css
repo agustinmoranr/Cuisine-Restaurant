@@ -2,18 +2,21 @@
   .search-view {
     justify-items: start;
     grid-template-columns: 50% 1fr;
-    padding-left: 100px;
+    padding-left: 150px;
   }
   .search-form {
     max-width: none;
   }
   .search-view--title {
     align-self: end;
-    font-size: 84rem;
+    font-size: 88rem;
     line-height: 84px;
   }
   .social-stats {
     gap: 60px;
+  }
+  #search-input::placeholder {
+    font-size: 16rem;
   }
 /* home section end */
 

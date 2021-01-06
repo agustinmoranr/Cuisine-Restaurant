@@ -42,8 +42,11 @@
     height: 65%;
   }
   .search-form label {
-    height: 100%;
+    height: 95%;
   }
+  .social-stats .material-icons {
+    font-size: 28rem;
+}
 /* home end */
 
 
