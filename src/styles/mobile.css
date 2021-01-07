@@ -24,7 +24,7 @@
   * a {
     text-decoration: none;
   }
-  h1 {
+  h1, .card--price, .info-contact-number, .hours {
     font-family: 'Old Standard TT', serif;
   }
   .img-basis {
@@ -318,7 +318,7 @@
     border-bottom: 1px solid var(--light-primary-color);
   }
   .slider {
-    display: none;
+    display: grid;
     width: 100%;
     grid-template-rows: max-content 1fr;
     align-items: center;
@@ -379,7 +379,6 @@
   }
   .card--price {
     font-weight: bold;
-    font-family: 'Old Standard TT', serif;
   }
   .card-buy-btn {
     margin-top: 15px;
@@ -392,234 +391,50 @@
 
 
 /* ----breakfast start----- */
-  #slide-br-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-br-1-btn"]  {
+  #slide-menu-0:checked ~ .manual-ctrls .manual-btn[for="slide-menu-0"],
+  #slide-menu-1:checked ~ .manual-ctrls .manual-btn[for="slide-menu-1"],
+  #slide-menu-2:checked ~ .manual-ctrls .manual-btn[for="slide-menu-2"]
+  {
     background: var(--secondary-color);
     opacity: 1;
     width: 20px;
     height: 20px;
   }
-  #slide-br-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-br-2-btn"]  {
-    background: var(--secondary-color);
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-  }
-  #slide-br-3-btn:checked ~ .manual-ctrls .manual-btn[for="slide-br-3-btn"]  {
-    background: var(--secondary-color);
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-  }
+
 /* ----breakfast end----- */
-
-
-/* ----lunch start----- */
-  #slide-lh-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-lh-1-btn"]  {
-    background: var(--secondary-color);
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-  }
-  #slide-lh-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-lh-2-btn"]  {
-    background: var(--secondary-color);
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-  }
-  #slide-lh-3-btn:checked ~ .manual-ctrls .manual-btn[for="slide-lh-3-btn"]  {
-    background: var(--secondary-color);
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-  }
-/* ----lunch end----- */
-
-
-/* ----dinner start----- */
-  #slide-dn-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-dn-1-btn"]  {
-    background: var(--secondary-color);
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-  }
-  #slide-dn-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-dn-2-btn"]  {
-    background: var(--secondary-color);
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-  }
-  #slide-dn-3-btn:checked ~ .manual-ctrls .manual-btn[for="slide-dn-3-btn"]  {
-    background: var(--secondary-color);
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-  }
-/* ----dinner end----- */
-
-
-/* ----dessert start----- */
-  #slide-drt-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-drt-1-btn"]  {
-    background: var(--secondary-color);
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-  }
-  #slide-drt-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-drt-2-btn"]  {
-    background: var(--secondary-color);
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-  }
-/* ----dessert end----- */
-
-
-/* ----shakes start----- */
-  #slide-sk-1-btn:checked ~ .manual-ctrls .manual-btn[for="slide-sk-1-btn"]  {
-    background: var(--secondary-color);
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-  }
-  #slide-sk-2-btn:checked ~ .manual-ctrls .manual-btn[for="slide-sk-2-btn"]  {
-    background: var(--secondary-color);
-    opacity: 1;
-    width: 20px;
-    height: 20px;
-  }
-/* ----shakes end----- */
-/* manual ctrols end */
 
 
 /* render slide start */
 /* ----breakfast slides start----- */
-  #slide-br-1-btn:checked ~ .first{
-    display: grid;
-    visibility: visible;
-    animation: fade 1.5s;
-  }
-  #slide-br-2-btn:checked ~ .second{
-    display: grid;
-    visibility: visible;
-    animation: fade 1.5s;
-  }
-  #slide-br-3-btn:checked ~ .third{
+  #slide-menu-0:checked ~ .slide,
+  #slide-menu-1:checked ~ .slide ,
+  #slide-menu-2:checked ~ .slide
+  {
     display: grid;
     visibility: visible;
     animation: fade 1.5s;
   }
 /* ----breakfast slides end----- */
 
-/* ----lunch slides start----- */
-  #slide-lh-1-btn:checked ~ .first{
-    display: grid;
-    visibility: visible;
-    animation: fade 1.5s;
-  }
-  #slide-lh-2-btn:checked ~ .second{
-    display: grid;
-    visibility: visible;
-    animation: fade 1.5s;
 
-  }
-  #slide-lh-3-btn:checked ~ .third{
-    display: grid;
-    visibility: visible;
-    animation: fade 1.5s;
-  }
-/* ----lunch slides start----- */
 
-/* ----dinner slides start----- */
-  #slide-dn-1-btn:checked ~ .first{
-    display: grid;
-    visibility: visible;
-    animation: fade 1.5s;
-  }
-  #slide-dn-2-btn:checked ~ .second{
-    display: grid;
-    visibility: visible;
-    animation: fade 1.5s;
-
-  }
-  #slide-dn-3-btn:checked ~ .third{
-    display: grid;
-    visibility: visible;
-    animation: fade 1.5s;
-}
-/* ----dinner slides start----- */
-
-/* ----dessert slides start----- */
-  #slide-drt-1-btn:checked ~ .first{
-    display: grid;
-    visibility: visible;
-    animation: fade 1.5s;
-  }
-  #slide-drt-2-btn:checked ~ .second{
-    display: grid;
-    visibility: visible;
-    animation: fade 1.5s;
-  }
-/* ----dessert slides start----- */
-
-/* ----shakes slides start----- */
-  #slide-sk-1-btn:checked ~ .first{
-    display: grid;
-    visibility: visible;
-    animation: fade 1.5s;
-  }
-  #slide-sk-2-btn:checked ~ .second{
-    display: grid;
-    visibility: visible;
-    animation: fade 1.5s;
-  }
-/* ----shakes slides start----- */
 /* render slide end */
 
 
 /* -----slider nav ctrols start----- */
-  #breakfast-btn:checked ~ .slider-nav label[for="breakfast-btn"] {
-    color: var(--secondary-color);
-    border-bottom: 1px solid var(--secondary-color);
-    transition: all 0.2s;
-  }
-  #lunch-btn:checked ~ .slider-nav label[for="lunch-btn"] {
-    color: var(--secondary-color);
-    border-bottom: 1px solid var(--secondary-color);
-    transition: all 0.2s;
-  }
-  #dinner-btn:checked ~ .slider-nav label[for="dinner-btn"] {
-    color: var(--secondary-color);
-    border-bottom: 1px solid var(--secondary-color);
-    transition: all 0.2s;
-  }
-  #dessert-btn:checked ~ .slider-nav label[for="dessert-btn"] {
-    color: var(--secondary-color);
-    border-bottom: 1px solid var(--secondary-color);
-    transition: all 0.2s;
-  }
-  #shake-btn:checked ~ .slider-nav label[for="shake-btn"] {
+  #breakfast-btn:checked ~ .slider-nav label[for="breakfast-btn"],
+  #lunch-btn:checked ~ .slider-nav label[for="lunch-btn"],
+  #dinner-btn:checked ~ .slider-nav label[for="dinner-btn"],
+  #dessert-btn:checked ~ .slider-nav label[for="dessert-btn"]
+  #shake-btn:checked ~ .slider-nav label[for="shake-btn"]
+  {
     color: var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
     transition: all 0.2s;
   }
 /* -----slider nav ctrols end----- */
 
-/* ----render slider start----- */
-  #breakfast-btn:checked ~ .breakfast {
-    display: grid;
-  }
-  #lunch-btn:checked ~ .lunch {
-    display: grid;
-  }
-  #dinner-btn:checked ~ .dinner {
-    display: grid;
-  }
-  #dessert-btn:checked ~ .dessert {
-    display: grid;
-  }
-  #shake-btn:checked ~ .shakes {
-    display: grid;
-  }
-/* ----render slider end----- */
+
 /* -----Menu Section end----- */
 
 
@@ -676,7 +491,6 @@
     padding: 10px;
   }
   .info-contact-number {
-    font-family: 'Old Standard TT', serif;
     font-size: 28rem;
     font-weight: bold;
   }
@@ -687,7 +501,6 @@
     margin-top: 10px;
   }
   .hours {
-    font-family: 'Old Standard TT', serif;
     font-style: italic;
     font-weight: bold;
     font-size: 16rem;
