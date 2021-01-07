@@ -425,7 +425,7 @@
   #breakfast-btn:checked ~ .slider-nav label[for="breakfast-btn"],
   #lunch-btn:checked ~ .slider-nav label[for="lunch-btn"],
   #dinner-btn:checked ~ .slider-nav label[for="dinner-btn"],
-  #dessert-btn:checked ~ .slider-nav label[for="dessert-btn"]
+  #dessert-btn:checked ~ .slider-nav label[for="dessert-btn"],
   #shake-btn:checked ~ .slider-nav label[for="shake-btn"]
   {
     color: var(--secondary-color);

@@ -94,52 +94,6 @@
 
 
 /* --------order-now section start-------- */
-// const menu = {
-//   'breakfast': {
-//     '0': [
-//       {
-//         id:0,
-//         img: 'hcakes.jpg',
-//         price: "$49",
-//         name: "Hot Cakes"
-//       },
-//       {
-//         id:1,
-//         img: 'hcakes.jpg',
-//         price: "$49",
-//         name: "Hot Cakes"
-//       }
-//     ],
-//     '1': [
-//       {
-//         id:0,
-//         img: 'hcakes.jpg',
-//         price: "$49",
-//         name: "Hot Cakes"
-//       },
-//       {
-//         id:1,
-//         img: 'hcakes.jpg',
-//         price: "$49",
-//         name: "Hot Cakes"
-//       }
-//     ],
-//     '2': [
-//       {
-//         id:0,
-//         img: 'hcakes.jpg',
-//         price: "$49",
-//         name: "Hot Cakes"
-//       },
-//       {
-//         id:1,
-//         img: 'hcakes.jpg',
-//         price: "$49",
-//         name: "Hot Cakes"
-//       }
-//     ],
-//   }
-// }
 const MENU = {
   'breakfast': [
     {
@@ -428,7 +382,6 @@ function handleAddToCart(element) {
   
     button.innerText = 'Added Succesfully'
     button.style.backgroundColor = 'green'
-    element.style.display = 'grid'
 
     setTimeout(() => {
       button.innerText = 'Order Now'
@@ -532,7 +485,8 @@ function handleAddToCart(element) {
     LABEL_HANDLER.innerText = labelContent || ''
   }
 
-  function changeBlogData (arrayData, id) {
+  function changeBlogData (arrayData, id, interval) {
+    if(typeof(interval) === 'undefined') clearInterval(timerId)
     const REVIEWER_IMG = REVIEWS_SLIDER.querySelector('.reviewer-img-ctr').children[0]
     const REVIEWER_NAME = REVIEWS_SLIDER.querySelector('.reviewer-name')
     const REVIEWER_PROFESION = REVIEWS_SLIDER.querySelector('.reviewer-profesion')
@@ -545,6 +499,31 @@ function handleAddToCart(element) {
     REVIEWER_PROFESION.innerText = DATA.profesion
   }
 
+
+  function handleNavMenu() {
+    const inputBtn = document.getElementById('btn-menu')
+
+    setTimeout(() => {
+      inputBtn.checked = false
+    }, 500)
+  }
+
+
   window.onload = createSliderControls(REVIEWS, 'blog', BLOG, BLOG_SLIDER_CTROLS, '')
   window.onload = createSliderControls(MENU, 'menu', MENU_SLIDER, MENU_SLIDES_CTROLS, 'breakfast')
 // blog section end
+
+  // const BLOG = document.getElementById("menu");
+  const BLOG_INPT = BLOG.querySelectorAll('input')
+  let count = REVIEWS.length -1;
+  let countData = 0
+  let timerId = setInterval(() => {
+    // debugger
+    count <= 0? count = REVIEWS.length -1
+    :count --
+    countData >= REVIEWS.length -1? countData = 0
+    :countData ++
+    BLOG_INPT[count].checked = true 
+    changeBlogData(REVIEWS, countData, true)
+  }, 5000)
+  // console.log(timerId)
