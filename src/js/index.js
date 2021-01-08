@@ -378,14 +378,12 @@ function handleMenuCategory(category) {
 }
 
 function handleAddToCart(element) {
-  const button = element.querySelector('.card-buy-btn')
-  
-    button.innerText = 'Added Succesfully'
-    button.style.backgroundColor = 'green'
+    element.innerText = 'Added Succesfully'
+    element.style.backgroundColor = 'green'
 
     setTimeout(() => {
-      button.innerText = 'Order Now'
-      button.style.backgroundColor = '#ff8800'
+      element.innerText = 'Order Now'
+      element.style.backgroundColor = '#ff8800'
     }, 2000)
 }
 /* --------order-now section end-------- */
